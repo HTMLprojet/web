@@ -3,12 +3,13 @@ body
 	background-image: url("background4.jpeg"); 
 	background-size: cover;
 	margin: 0px;
+	font-weight:300;
 }
 *
 {
 	color: white;
 }
-.header
+#hautpage
 {
 	height: 120px;
 }
@@ -25,8 +26,24 @@ body
 	border-radius: 10px 10px 10px 0px; 
 	margin-bottom: 5px;
 }
-.header
+#table1 th,#table1 td
 {
+	color: black;
+}
+table 
+{
+	width: 100%;
+	border-collapse: collapse;
+}
+th 
+{
+	height: 50px;
+	text-align: center;
+
+}
+td
+{
+	text-align: center;
 
 }
 #loading {
@@ -42,3 +59,62 @@ body
 	background-color:black;
 	z-index:100;
 }
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+header
+{
+	 background: #e8e8e8;
+}
+header::after{
+	content:'';
+	display: table;
+	clear: both;
+}
+.logo{
+	float: left;
+}
+nav{
+	float: right;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav li{
+	display:inline-block;
+	margin: 0 35px;
+	padding-top: 25px;
+	position : relative;
+}
+nav a{
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+nav a:hover{
+	color: #000;
+}
+nav a::before{
+	content: '';
+	display: block;
+	height : 5px;
+	background-color: #444;
+	position: absolute;
+	top: 0;
+	width: 0%;
+	transition: all ease-in-out 250ms;
+}
+nav a:hover::before {
+	width: 100%
+}
+
+
+
+
+
+
+
