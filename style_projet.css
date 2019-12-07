@@ -1,16 +1,29 @@
-
-
-
 body
 {
-	background-image: url("background4.jpeg"); 
+	background-image: url("background6.jpg"); 
 	background-size: cover;
 	margin: 0px;
 	font-weight:300;
 }
-*
+.hautpage
 {
 	color: white;
+}
+*
+{
+	color: black;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+p
+{
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
 }
 #hautpage
 {
@@ -21,6 +34,10 @@ body
 	width: 1200px;
 	margin: auto;
 }
+.containment
+{
+	color: black;
+}
 .content
 {
 	padding: 20px;
@@ -28,7 +45,6 @@ body
 	color: black;
 	border-radius: 10px 10px 10px 0px; 
 	margin-bottom: 5px;
-	
 }
 #table1 th,#table1 td
 {
@@ -67,6 +83,8 @@ td
 	width: 80%;
 	margin: 0 auto;
 }
+@media screen and (min-width: 1250px)
+{
 header
 {
 	 background: #e8e8e8;
@@ -102,7 +120,8 @@ nav a{
 nav a:hover{
 	color: #000;
 }
-nav a::before{
+nav a::before
+{
 	content: '';
 	display: block;
 	height : 5px;
@@ -115,23 +134,114 @@ nav a::before{
 nav a:hover::before {
 	width: 100%
 }
+}
+@media screen and (max-width: 400px) 
+{
+header
+{
+	 background: #e8e8e8;
+	 background-repeat : repeat-y;
+}
+header::after{
+	content:'';
+	display: table;
+	clear: both;
+}
+.logo{
+	float: center;
+}
+nav{
+	float: center;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav li{
 
-.gauche{
-	float:left;
-	margin-right: 10px;
-	width:110px;
-	height:90px;
-
+	margin: 0 30px;
+	padding-top: 25px;
+	position : relative;
+}
+nav a{
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+nav a:hover{
+	color: #000;
+}
+nav a::before
+{
+	content: '';
+	display: block;
+	height : 5px;
+	background-color: #444;
+	position: absolute;
+	top: 0;
+	width: 0%;
+	transition: all ease-in-out 250ms;
+}
+nav a:hover::before {
+	width: 60%
+}
+}
+@media screen and (min-width: 401px) and (max-width: 1250px)
+{
+	header
+{
+	 background: #e8e8e8;
+	 background-repeat : repeat-y;
+}
+header::after{
+	content:'';
+	display: table;
+	clear: both;
+}
+.logo{
+	float: left;
+}
+nav{
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav li{
+	display:inline-block;
+	margin: 0 30px;
+	padding-top: 25px;
+	position : relative;
+}
+nav a{
+	color: #444;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+nav a:hover{
+	color: #000;
+}
+nav a::before
+{
+	content: '';
+	display: block;
+	height : 5px;
+	background-color: #444;
+	position: absolute;
+	top: 0;
+	width: 0%;
+	transition: all ease-in-out 250ms;
+}
+nav a:hover::before {
+	width: 100%
+}
 }
 
-.droite{
-	float:right;
-	margin-right: 10px;
-	width:110px;
-	height:90px;
 
-}
-h4{
-	color:black;
-}
+
+
 
