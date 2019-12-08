@@ -4,6 +4,7 @@ body
 	background-size: cover;
 	margin: 0px;
 	font-weight:300;
+	
 }
 .hautpage
 {
@@ -77,6 +78,7 @@ td
 }
 #loading{
 	background-color:black;
+	background-size:cover;
 	z-index:100;
 }
 .container{
@@ -134,6 +136,10 @@ nav a::before
 nav a:hover::before {
 	width: 100%
 }
+.footer{
+	background-color:grey;
+
+}
 }
 @media screen and (max-width: 400px) 
 {
@@ -187,6 +193,9 @@ nav a::before
 nav a:hover::before {
 	width: 60%
 }
+.footer{
+	background-color:grey;
+}
 }
 @media screen and (min-width: 401px) and (max-width: 1250px)
 {
@@ -239,9 +248,10 @@ nav a::before
 nav a:hover::before {
 	width: 100%
 }
+
+
+.footer{
+	background-color: grey;
+
 }
-
-
-
-
-
+}
